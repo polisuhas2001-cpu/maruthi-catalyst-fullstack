@@ -5,7 +5,7 @@ export const pool = new Pool({
   connectionString: env.DATABASE_URL,
   // Hosted Postgres (Supabase, RDS, etc.) requires TLS; this accepts the
   // provider's certificate chain without requiring a locally pinned CA.
-  ssl: env.isProduction ? { rejectUnauthorized: false } : undefined,
+  ssl: { rejectUnauthorized: false },
   max: 10,
   idleTimeoutMillis: 30_000,
 });
