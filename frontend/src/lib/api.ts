@@ -1,7 +1,7 @@
 // Thin fetch wrapper for talking to the Maruthi Catalyst backend.
 //
 // VITE_API_URL should point at the backend origin, e.g.
-//   VITE_API_URL=http://localhost:4000        (development)
+//   VITE_API_URL=https://maruthi-catalyst-backend.onrender.com        (development)
 //   VITE_API_URL=https://api.my-domain.com    (production)
 //
 // If it's left empty, requests are made relative to the frontend's own
